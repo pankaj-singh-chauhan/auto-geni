@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEO Link Extractor | auto-geni</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <header>
-    <h1>🔗 SEO Link Extractor</h1>
-    <p>Extract, clean, and generate content for links from HTML — all in your browser.</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEO Link Extractor | auto-geni</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🔗 SEO Link Extractor</h1>
+      <p>Extract, clean, and generate link-based content — all in one step.</p>
+    </header>
 
-  <section class="controls">
-    <textarea id="htmlInput" placeholder="Paste HTML content here..."></textarea>
-    <p>or</p>
-    <input type="file" id="htmlFile" accept=".html,.htm">
-    <input type="text" id="divId" placeholder="Enter div ID (optional)">
-    <button id="extractBtn">Extract Links</button>
-  </section>
+    <section class="controls">
+      <textarea id="htmlInput" placeholder="Paste HTML content here..."></textarea>
+      <p>or</p>
+      <input type="file" id="htmlFile" accept=".html,.htm" />
+      <input type="text" id="divId" placeholder="Enter div ID (optional)" />
+    </section>
 
-  <section class="config">
-    <h3>Columns Configuration</h3>
-    <div id="columns"></div>
-    <button id="addColumnBtn">➕ Add Column</button>
-    <label><input type="checkbox" id="includeAnchorText" checked> Include Anchor Text Column</label>
-  </section>
+    <section class="config">
+      <h3>Columns Configuration</h3>
+      <div id="columns"></div>
+      <button id="addColumnBtn">➕ Add Column</button>
+      <div class="options">
+        <label class="checkbox-container">
+          <input type="checkbox" id="extractNumberFromImage" checked>
+          Extract numbers from image URLs (e.g., image_one.jpg → 1)
+        </label>
+      </div>
+    </section>
 
-  <section class="output">
-    <table id="outputTable"></table>
-    <div class="actions">
-      <button id="copyBtn">📋 Copy All</button>
-      <button id="downloadExcelBtn">⬇️ Download as Excel</button>
-    </div>
-  </section>
+    <section class="output">
+      <div class="actions">
+        <button id="generateBtn">⚡ Generate Content</button>
+        <button id="copyBtn">📋 Copy All</button>
+        <button id="downloadExcelBtn">⬇️ Download as Excel</button>
+      </div>
+      <table id="outputTable"></table>
+    </section>
 
-  <footer>
-    <a href="../../index.html">← Back to auto-geni</a>
-  </footer>
+    <footer>
+      <a href="../../index.html">← Back to auto-geni</a>
+    </footer>
 
-  <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
