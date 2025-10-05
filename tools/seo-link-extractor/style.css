@@ -1,0 +1,107 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: #f8faff;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #2b7bff;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+section {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  font-family: monospace;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+input[type="file"], input[type="text"] {
+  display: block;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background: #2b7bff;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #1759cc;
+}
+
+.config h3 {
+  margin-top: 0;
+}
+
+#columns {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.column-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.column-row input {
+  flex: 1;
+  padding: 5px;
+}
+
+#outputTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+#outputTable th, #outputTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#outputTable th {
+  background: #f2f2f2;
+}
+
+.actions {
+  text-align: right;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  margin: 2rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #2b7bff;
+  text-decoration: none;
+}
